@@ -1,0 +1,80 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 30px auto;
+}
+h1 {
+  margin: 25px auto;
+}
+
+form {
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  padding-left: 20px;
+}
+
+p {
+  text-transform: capitalize;
+}
+p i {
+  color: rgb(20, 204, 218);
+  font-size: 30px;
+}
+
+para1 {
+  font-size: 40px;
+}
+#location {
+  background-color: aqua;
+  padding: 10px 10px;
+  border: 30px;
+  border-radius: 50px;
+  margin: 15px;
+  float: right;
+}
+
+.btn {
+  border: 3px solid rgb(44, 44, 31);
+  border-radius: 5px;
+  margin-left: 2px;
+  color: rgb(20, 165, 197);
+  background-color: rgb(44, 44, 31);
+}
+.btn:hover {
+  color: black;
+  background: transparent;
+}
+
+.two-one {
+  font-size: 48px;
+  padding: 3px;
+}
+
+.card {
+  background-color: khaki;
+}
+
+.precip {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 23px;
+}
+
+#humidity {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+}
+#wind {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+}
+.city {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: bold;
+}
