@@ -26,7 +26,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-h2.innerHTML = `${day} ${month} ${date} ${hours}:0${minutes} ${year}`;
+h2.innerHTML = `${day} ${month} ${date} ${hours}:${minutes} ${year}`;
 
 function showCondition(response) {
   let temperature = Math.round(response.data.main.temp);
@@ -68,13 +68,13 @@ searchForm.addEventListener("submit", search);
 // h1.innerHTML = city;
 // axios.get(`${apiUrl}`).then(showTemperature);
 
-function showPosition(position) {
-  let h1 = document.querySelector("#location");
-  h1.innerHTML = `Your Latitude is ${position.coords.latitude} and longitude is ${position.coords.longitude}`;
-}
+// function showPosition(position) {
+//   let h1 = document.querySelector("#location");
+//   h1.innerHTML = `Your Latitude is ${position.coords.latitude} and longitude is ${position.coords.longitude}`;
+// }
 
-function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-let button = document.querySelector("#location");
-button.addEventListener("click", getCurrentPosition);
+// function getCurrentPosition() {
+//   navigator.geolocation.getCurrentPosition(showPosition);
+// }
+// let button = document.querySelector("#location");
+// button.addEventListener("click", getCurrentPosition);

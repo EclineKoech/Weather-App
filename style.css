@@ -1,6 +1,21 @@
+/* .container{
+  background-image: url(/clearcloud.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 body {
   font-family: "Roboto", sans-serif;
-  margin: 30px auto;
+  /* margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto; */
+ 
+  background-image: url(/images/clouds.jpeg); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  /* width: 600px; */
+  /* height: 20px; */
+  /* background-image: linear-gradient(to right, #6394df, #eff1f1);  */
 }
 h1 {
   margin: 25px auto;
@@ -24,13 +39,8 @@ p i {
 para1 {
   font-size: 40px;
 }
-#location {
-  background-color: aqua;
-  padding: 10px 10px;
-  border: 30px;
-  border-radius: 50px;
-  margin: 15px;
-  float: right;
+a {
+  color: black;
 }
 
 .btn {
@@ -50,9 +60,9 @@ para1 {
   padding: 3px;
 }
 
-.card {
-  background-color: khaki;
-}
+ .card {
+    background-color: transparent;
+} 
 
 .precip {
   position: absolute;
