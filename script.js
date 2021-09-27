@@ -22,7 +22,8 @@ function formatDate(timestamp) {
 }
 
 function showCondition(response) {
-  let temperature = Math.round(response.data.main.temp);
+  celsiusTemperature = response.data.main.temp;
+  let temperature = Math.round(celsiusTemperature);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${temperature}`;
   let description = document.querySelector("#temperature-description");
@@ -55,6 +56,27 @@ function search(event) {
   let searchResult = document.querySelector("#search-result");
   axios.get(`${apiUrl}`).then(showCondition);
 }
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheit);
+}
+function displayCelsius(event){
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  temperature.innerHTML = Math.round( celsiusTemperature);
+}
+
+let celsiusTemperature = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsius);
