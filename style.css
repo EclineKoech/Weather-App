@@ -6,12 +6,13 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 h1{
   color: #0a0909;
   font-weight: 480px;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 ul{
   margin: 0;
@@ -20,35 +21,41 @@ ul{
 li{
   list-style: none;
   color: #0a0909;
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 20px;
+  font-weight: 355;
   line-height: 19px;
+  margin-bottom: 5px;
 }
 li::first-letter{
   text-transform: capitalize;
 }
+
 small a{
   background-color: #fff;
   text-decoration: none;
 }
-.weather-temperature #fahrenheit{
-  background-color: #fff;
-  text-decoration: none;
+.heading{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 .weather-app{
   padding: 20px;
-  border: 1px solid #808080;
+  border: 5px solid #2691BB;
   border-radius: 5px;
+  width: 120vh;
+  height: 70vh;
+  box-shadow: 1px 1px 50px 50px #fff;
 }
 .weather-wrapper{
   max-width: 600px;
   margin: 30px auto;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
-.weather-temperature #celcius{
+.weather-temperature #celsius{
   position: relative;
   font-size: 12px;
-  font-weight: 550;
+  font-weight: 500;
   top: -34px;
   /* margin: 23px; */
 }
@@ -62,19 +69,18 @@ small a{
   margin-right: 5px;
   height: 64px;
   width: 64px;
+  float: left;
 }
 .overview{
   margin-bottom: 20px;
 }
-.weather-temperature .active{
-  text-decoration: none;
-  color: #0a0909;
-}
+
 .weather-temperature #celsius{
-  background-color: #fff;
+  /* background-color: #fff; */
   text-decoration: none;
   cursor:  default;
-  color: #0a0909;
+  font-size: large;
+  color: #fff;
 }
 .weather-forecast{
   margin-top: 20px;
@@ -83,11 +89,10 @@ small a{
 .forecast-date{
   font-size: 16px;
   color: #0a0909;
-  opacity: 0.6;
 }
 .forecast-temps{
   font-size: 13px;
 }
 .temps-min{
-  opacity: 0.5;
+  opacity: 0.7;
 }

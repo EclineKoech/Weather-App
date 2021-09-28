@@ -12,6 +12,7 @@
 </head>
 <body>
   <div class="container">
+       <h1 class="heading">Weather App</h1>
     <div class="weather-wrapper">
       <div class="weather-app">
         <div class="form">
@@ -21,7 +22,7 @@
                   <input class="form-control " type="text" placeholder="Enter City..." id="search-result"/>
                 </div>
                 <div class="col-3">
-                  <button class="btn btn-primary " type="submit" value="search">Search</button>
+                  <button class="btn btn-dark " type="submit" value="search">Search</button>
                 </div>
               </div>
             </form>
@@ -36,8 +37,8 @@
         <div class="row">
           <div class="col-6">
             <div class="clearfix weather-temperature">
-              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly_cloudy" class="float-left"  id="icon">
-                <strong id="temperature">26</strong><span id="celcius" class="active" > <a href="#" id="celsius">°C </a>| <a href="#" id="fahrenheit">°F</a></span>
+              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly_cloudy" id="icon">
+                <strong id="temperature">26</strong><span id="celsius" class="active" >°C </span>
             </div>
           </div>
           <div class="col-6">
@@ -48,8 +49,7 @@
             </ul>
           </div>
         </div>
-        <div class="weather-forecast" id="forecast">
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
       <small>
           <a href="https://github.com/EclineKoech/Weather-App" target="_blank">Open-source code by </a>Ecline Koech
