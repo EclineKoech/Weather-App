@@ -45,7 +45,7 @@ small a{
   border-radius: 5px;
   width: 120vh;
   height: 70vh;
-  box-shadow: 1px 1px 50px 50px #fff;
+  box-shadow: 1px 1px 50px 5px #0a0909;
 }
 .weather-wrapper{
   max-width: 600px;
